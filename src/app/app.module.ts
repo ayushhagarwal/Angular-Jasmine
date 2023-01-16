@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { TruncateStringComponent } from './truncate-string/truncate-string.component';
 import { MultiplyTestComponent } from './multiply-test/multiply-test.component';
 import { FormsModule } from '@angular/forms';
+import { BooleanTestComponent } from './boolean-test/boolean-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TruncateStringComponent,
-    MultiplyTestComponent
+    MultiplyTestComponent,
+    BooleanTestComponent
   ],
   imports: [
     BrowserModule,
