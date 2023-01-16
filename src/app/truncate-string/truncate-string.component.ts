@@ -17,7 +17,7 @@ export class TruncateStringComponent implements OnInit {
 
   public truncateString (){
     if(this.longDescription.length>50){
-      this.truncatedString = this.longDescription.slice(0,50) +'...';
+      this.truncatedString = this.longDescription.slice(0,50);
     }
     else{
       this.truncatedString = this.longDescription;
