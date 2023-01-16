@@ -22,4 +22,10 @@ describe('TruncateStringComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should truncate text if it is longer than 50 characters', () => {
+    component.truncateString();
+    expect(component.truncatedString.length).toBeLessThanOrEqual(50);
+    expect(component.truncatedString).toEqual(component.longDescription.slice(0, 50));
+  });
 });
